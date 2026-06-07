@@ -321,6 +321,7 @@
       border: none;
       cursor: pointer;
       font-size: 1rem;
+      position: relative;
     }
     .btn-google {
       background: #1A9BD7;
@@ -330,6 +331,7 @@
       background: #1589b8;
       transform: translateY(-2px);
       box-shadow: 0 8px 20px rgba(26, 155, 215, 0.3);
+      color: white;
     }
     .btn-apple {
       background: #2EC4A9;
@@ -340,6 +342,7 @@
       background: #26a892;
       transform: translateY(-2px);
       box-shadow: 0 8px 20px rgba(46, 196, 169, 0.3);
+      color: white;
     }
     .coming-soon {
       position: absolute;
@@ -432,7 +435,7 @@
           <p style="color: #1A9BD7; font-weight: 600; font-size: 1rem;">Meteo + Outfit in un'unica app</p>
           <h1>Vestiti giusto,<br><span class="blue">viaggia leggero.</span></h1>
           <p>MeteOutfit ti suggerisce cosa indossare ogni giorno in base al meteo reale e ti aiuta a preparare la valigia perfetta per ogni viaggio.</p>
-          <p style="font-weight: 700; font-size: 1.3rem;"><span class="blue">SOLO 2€</span> oppure <span class="amber">gratis per i tester</span></p>
+          <p style="font-weight: 700; font-size: 1.3rem; margin: 20px 0;"><span class="blue" style="font-size: 1.8rem; display: block; margin-bottom: 8px;">SOLO 2€</span><span style="color: #4A5F7F; font-size: 1rem; font-weight: 500;">oppure gratis per i tester</span></p>
           <div class="hero-buttons">
             <a href="#download" class="btn btn-primary">Scarica per 2€</a>
             <a href="#beta" class="btn btn-secondary">Scopri come funziona</a>
@@ -616,11 +619,13 @@
       <h2>Pronto a vestirti meglio?</h2>
       <p>Scarica MeteOutfit e non chiederti mai più "cosa mi metto oggi?". Meteo, outfit e valigia: tutto in un tap.</p>
       <div class="cta-buttons">
-        <a href="https://play.google.com/store/apps/details?id=space.manus.meteoutfit.app.t20260320092841&utm_source=emea_Med" class="btn-download btn-google">
-          📱 Google Play
+        <a href="https://play.google.com/store/apps/details?id=space.manus.meteoutfit.app.t20260320092841&utm_source=emea_Med" class="btn-download btn-google" style="gap: 15px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13.5v8.25A1.5 1.5 0 004.5 23h15a1.5 1.5 0 001.5-1.5V13.5M1 9l11-6 11 6M3.75 15h2.25v6H3.75zm4.5 0h2.25v6H8.25zm4.5 0h2.25v6h-2.25zm4.5 0h2.25v6h-2.25z"/></svg>
+          Google Play
         </a>
-        <a href="#" class="btn-download btn-apple">
-          🍎 App Store
+        <a href="#" class="btn-download btn-apple" style="gap: 15px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 13.5c-.73 0-1.38.35-1.8.88-.4.5-.65 1.35-.65 2.3 0 .95.25 1.8.65 2.3.42.53 1.07.88 1.8.88.73 0 1.38-.35 1.8-.88.4-.5.65-1.35.65-2.3 0-.95-.25-1.8-.65-2.3-.42-.53-1.07-.88-1.8-.88zm-11 0c-.73 0-1.38.35-1.8.88C3.85 14.88 3.6 15.73 3.6 16.68c0 .95.25 1.8.65 2.3.42.53 1.07.88 1.8.88.73 0 1.38-.35 1.8-.88.4-.5.65-1.35.65-2.3 0-.95-.25-1.8-.65-2.3-.42-.53-1.07-.88-1.8-.88z"/></svg>
+          App Store
           <span class="coming-soon">Coming Soon</span>
         </a>
       </div>
