@@ -317,11 +317,15 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      transition: all 0.3s;
+      transition: all 0.3s ease;
       border: none;
       cursor: pointer;
       font-size: 1rem;
       position: relative;
+      color: white !important;
+    }
+    .btn-download:hover {
+      color: white !important;
     }
     .btn-google {
       background: #1A9BD7;
@@ -331,7 +335,7 @@
       background: #1589b8;
       transform: translateY(-2px);
       box-shadow: 0 8px 20px rgba(26, 155, 215, 0.3);
-      color: white;
+      color: white !important;
     }
     .btn-apple {
       background: #2EC4A9;
@@ -342,7 +346,7 @@
       background: #26a892;
       transform: translateY(-2px);
       box-shadow: 0 8px 20px rgba(46, 196, 169, 0.3);
-      color: white;
+      color: white !important;
     }
     .coming-soon {
       position: absolute;
@@ -619,13 +623,11 @@
       <h2>Pronto a vestirti meglio?</h2>
       <p>Scarica MeteOutfit e non chiederti mai più "cosa mi metto oggi?". Meteo, outfit e valigia: tutto in un tap.</p>
       <div class="cta-buttons">
-        <a href="https://play.google.com/store/apps/details?id=space.manus.meteoutfit.app.t20260320092841&utm_source=emea_Med" class="btn-download btn-google" style="gap: 15px;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13.5v8.25A1.5 1.5 0 004.5 23h15a1.5 1.5 0 001.5-1.5V13.5M1 9l11-6 11 6M3.75 15h2.25v6H3.75zm4.5 0h2.25v6H8.25zm4.5 0h2.25v6h-2.25zm4.5 0h2.25v6h-2.25z"/></svg>
-          Google Play
+        <a href="https://play.google.com/store/apps/details?id=space.manus.meteoutfit.app.t20260320092841&utm_source=emea_Med" class="btn-download btn-google">
+          <img src="assets/google-play-badge.png" alt="Google Play" style="height: 50px;">
         </a>
-        <a href="#" class="btn-download btn-apple" style="gap: 15px;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 13.5c-.73 0-1.38.35-1.8.88-.4.5-.65 1.35-.65 2.3 0 .95.25 1.8.65 2.3.42.53 1.07.88 1.8.88.73 0 1.38-.35 1.8-.88.4-.5.65-1.35.65-2.3 0-.95-.25-1.8-.65-2.3-.42-.53-1.07-.88-1.8-.88zm-11 0c-.73 0-1.38.35-1.8.88C3.85 14.88 3.6 15.73 3.6 16.68c0 .95.25 1.8.65 2.3.42.53 1.07.88 1.8.88.73 0 1.38-.35 1.8-.88.4-.5.65-1.35.65-2.3 0-.95-.25-1.8-.65-2.3-.42-.53-1.07-.88-1.8-.88z"/></svg>
-          App Store
+        <a href="#" class="btn-download btn-apple" style="position: relative;">
+          <img src="assets/app-store-badge.jpg" alt="App Store" style="height: 50px;">
           <span class="coming-soon">Coming Soon</span>
         </a>
       </div>
