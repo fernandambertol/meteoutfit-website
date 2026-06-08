@@ -295,7 +295,7 @@
       margin-top: 60px;
     }
     .stat-item h3 { font-size: 2.5rem; margin-bottom: 10px; }
-    .stat-item p { font-size: 1.1rem; opacity: 0.9; }
+    .stat-item p { font-size: 1.1rem; opacity: 0.9; color: white; font-weight: 500; }
 
     /* ===== CTA ===== */
     .cta {
@@ -329,10 +329,15 @@
     }
     .btn-download:hover {
       color: white !important;
+      text-decoration: none;
+    }
+    .btn-download:active {
+      color: white !important;
     }
     .btn-download img {
-      height: 40px;
+      height: 32px;
       width: auto;
+      filter: brightness(0) invert(1);
     }
     .btn-google {
       background: #1A9BD7;
@@ -446,7 +451,7 @@
           <p style="color: #1A9BD7; font-weight: 600; font-size: 1rem; margin-bottom: 16px;">Meteo + Outfit in un'unica app</p>
           <h1>Vestiti giusto,<br><span class="blue">viaggia leggero.</span></h1>
           <p>MeteOutfit ti suggerisce cosa indossare ogni giorno in base al meteo reale e ti aiuta a preparare la valigia perfetta per ogni viaggio.</p>
-          <p style="font-weight: 700; font-size: 1.3rem; margin: 20px 0;"><span class="blue" style="font-size: 1.8rem; display: block; margin-bottom: 8px;">SOLO 2€</span><span style="color: #4A5F7F; font-size: 1rem; font-weight: 500;">oppure gratis per i tester</span></p>
+          <p style="font-weight: 700; font-size: 1.3rem; margin: 20px 0;"><span class="blue" style="font-size: 1.8rem; display: block; margin-bottom: 8px;">SOLO 2€</span><span style="color: #1A9BD7; font-size: 1rem; font-weight: 500;">oppure gratis per i tester</span></p>
           <div class="hero-buttons">
             <a href="#download" class="btn btn-primary">Scarica per 2€</a>
             <a href="#beta" class="btn btn-secondary">Scopri come funziona</a>
@@ -631,10 +636,12 @@
       <p>Scarica MeteOutfit e non chiederti mai più "cosa mi metto oggi?". Meteo, outfit e valigia: tutto in un tap.</p>
       <div class="cta-buttons">
         <a href="https://play.google.com/store/apps/details?id=space.manus.meteoutfit.app.t20260320092841&utm_source=emea_Med" class="btn-download btn-google">
-          <img src="assets/google-play-logo.png" alt="Google Play">
+          <img src="assets/google-play-logo.png" alt="Google Play" style="height: 28px;">
+          <span style="font-weight: 600; color: white;">Google Play</span>
         </a>
         <a href="#" class="btn-download btn-apple" style="position: relative;">
-          <img src="assets/app-store-logo.png" alt="App Store">
+          <img src="assets/app-store-logo.png" alt="App Store" style="height: 28px;">
+          <span style="font-weight: 600; color: white;">App Store</span>
           <span class="coming-soon">Coming Soon</span>
         </a>
       </div>
