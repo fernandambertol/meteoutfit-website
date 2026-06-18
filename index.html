@@ -328,6 +328,7 @@
     .btn-download:hover {
       color: white !important;
       text-decoration: none;
+      opacity: 0.9;
     }
     .btn-download:active {
       color: white !important;
@@ -339,6 +340,9 @@
     .btn-google {
       background: #0078FF;
       color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
     .btn-google:hover {
       background: #0060cc;
@@ -346,16 +350,29 @@
       box-shadow: 0 8px 20px rgba(0, 120, 255, 0.3);
       color: white !important;
     }
+    .btn-google img {
+      height: auto;
+      width: 100%;
+      max-width: 180px;
+    }
     .btn-apple {
       background: #FF8E00;
       color: white;
       position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
     .btn-apple:hover {
       background: #e67e00;
       transform: translateY(-2px);
       box-shadow: 0 8px 20px rgba(255, 142, 0, 0.3);
       color: white !important;
+    }
+    .btn-apple img {
+      height: auto;
+      width: 100%;
+      max-width: 180px;
     }
     .coming-soon {
       position: absolute;
@@ -631,11 +648,11 @@
       <p>Scarica MeteOutfit e non chiederti mai più "cosa mi metto oggi?". Meteo, outfit e valigia: tutto in un tap.</p>
       <div class="cta-buttons">
         <a href="https://play.google.com/store/apps/details?id=space.manus.meteoutfit.app.t20260320092841&utm_source=emea_Med" class="btn-download btn-google">
-          <img src="assets/google-play-badge.png" alt="Google Play" />
+          <img src="assets/google-play-badge-white.png" alt="Google Play" />
         </a>
         <div style="position: relative;">
           <a href="#" class="btn-download btn-apple" style="opacity: 0.6; cursor: not-allowed;">
-            <img src="assets/app-store-badge.png" alt="App Store" />
+            <img src="assets/app-store-badge-white.png" alt="App Store" />
           </a>
           <span class="coming-soon">Coming Soon</span>
         </div>
