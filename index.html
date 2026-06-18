@@ -16,7 +16,7 @@
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       color: #1C2B3A;
-      background: #F4F7FB;
+      background: #F8FBFD;
       line-height: 1.6;
     }
 
@@ -28,13 +28,11 @@
     h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 15px; }
     p { font-size: 1.1rem; color: #4A5F7F; line-height: 1.8; }
 
-    /* ===== COLORS ===== */
-    .blue { color: #1A9BD7; }
-    .teal { color: #2EC4A9; }
-    .amber { color: #FF9A3C; }
-    .bg-blue { background: #1A9BD7; }
-    .bg-teal { background: #2EC4A9; }
-    .bg-amber { background: #FF9A3C; }
+    /* ===== COLORS - From Logo Palette ===== */
+    .primary-blue { color: #0078FF; }
+    .primary-orange { color: #FF8E00; }
+    .bg-primary-blue { background: #0078FF; }
+    .bg-primary-orange { background: #FF8E00; }
 
     /* ===== HEADER ===== */
     header {
@@ -69,7 +67,7 @@
       font-weight: 500;
       transition: color 0.3s;
     }
-    nav a:hover { color: #1A9BD7; }
+    nav a:hover { color: #0078FF; }
     .btn {
       padding: 12px 24px;
       border-radius: 8px;
@@ -82,27 +80,27 @@
       font-size: 1rem;
     }
     .btn-primary {
-      background: #1A9BD7;
+      background: #0078FF;
       color: white;
     }
     .btn-primary:hover {
-      background: #1589b8;
+      background: #0060cc;
       transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(26, 155, 215, 0.3);
+      box-shadow: 0 8px 20px rgba(0, 120, 255, 0.3);
     }
     .btn-secondary {
       background: white;
-      color: #1A9BD7;
-      border: 2px solid #1A9BD7;
+      color: #0078FF;
+      border: 2px solid #0078FF;
     }
     .btn-secondary:hover {
-      background: #1A9BD7;
+      background: #0078FF;
       color: white;
     }
 
     /* ===== HERO ===== */
     .hero {
-      background: linear-gradient(135deg, #E6F4FE 0%, #F0F9FF 100%);
+      background: linear-gradient(135deg, #E3F2FD 0%, #F0F8FF 100%);
       padding: 120px 0;
     }
     .hero-content {
@@ -112,7 +110,7 @@
       align-items: center;
     }
     .hero-text h1 { color: #1C2B3A; }
-    .hero-text .blue { font-size: 3.5rem; }
+    .hero-text .primary-blue { font-size: 3.5rem; }
     .hero-text p {
       font-size: 1.2rem;
       margin: 30px 0;
@@ -176,14 +174,14 @@
     }
     .feature-card {
       padding: 40px;
-      background: #F4F7FB;
+      background: #F8FBFD;
       border-radius: 16px;
       text-align: center;
       transition: all 0.3s;
     }
     .feature-card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 15px 40px rgba(26, 155, 215, 0.15);
+      box-shadow: 0 15px 40px rgba(0, 120, 255, 0.15);
     }
     .feature-icon {
       font-size: 3rem;
@@ -193,8 +191,8 @@
     .feature-card p { color: #4A5F7F; }
     .feature-badge {
       display: inline-block;
-      background: #E6F4FE;
-      color: #1A9BD7;
+      background: #E3F2FD;
+      color: #0078FF;
       padding: 6px 12px;
       border-radius: 20px;
       font-size: 0.85rem;
@@ -204,7 +202,7 @@
 
     /* ===== HOW IT WORKS ===== */
     .how-it-works {
-      background: linear-gradient(135deg, #E6F4FE 0%, #F0F9FF 100%);
+      background: linear-gradient(135deg, #E3F2FD 0%, #F0F8FF 100%);
     }
     .steps {
       display: grid;
@@ -218,7 +216,7 @@
     .step-number {
       width: 60px;
       height: 60px;
-      background: #1A9BD7;
+      background: #0078FF;
       color: white;
       border-radius: 50%;
       display: flex;
@@ -250,9 +248,9 @@
     }
     .question {
       padding: 20px;
-      background: #F4F7FB;
+      background: #F8FBFD;
       border-radius: 12px;
-      border-left: 4px solid #FF9A3C;
+      border-left: 4px solid #FF8E00;
     }
     .question-emoji { font-size: 1.5rem; margin-bottom: 10px; }
     .question h4 { color: #1C2B3A; font-size: 1rem; margin-bottom: 8px; }
@@ -266,13 +264,13 @@
     .stat {
       text-align: center;
       padding: 20px;
-      background: linear-gradient(135deg, #E6F4FE 0%, #F0F9FF 100%);
+      background: linear-gradient(135deg, #E3F2FD 0%, #F0F8FF 100%);
       border-radius: 12px;
     }
     .stat-number {
       font-size: 2.5rem;
       font-weight: 800;
-      color: #1A9BD7;
+      color: #0078FF;
     }
     .stats-item p {
       color: #FFFFFF;
@@ -283,7 +281,7 @@
 
     /* ===== STATS ===== */
     .stats {
-      background: linear-gradient(135deg, #1A9BD7 0%, #2EC4A9 100%);
+      background: linear-gradient(135deg, #0078FF 0%, #FF8E00 100%);
       color: white;
       text-align: center;
     }
@@ -337,34 +335,33 @@
     .btn-download img {
       height: 32px;
       width: auto;
-      filter: brightness(0) invert(1);
     }
     .btn-google {
-      background: #1A9BD7;
+      background: #0078FF;
       color: white;
     }
     .btn-google:hover {
-      background: #1589b8;
+      background: #0060cc;
       transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(26, 155, 215, 0.3);
+      box-shadow: 0 8px 20px rgba(0, 120, 255, 0.3);
       color: white !important;
     }
     .btn-apple {
-      background: #2EC4A9;
+      background: #FF8E00;
       color: white;
       position: relative;
     }
     .btn-apple:hover {
-      background: #26a892;
+      background: #e67e00;
       transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(46, 196, 169, 0.3);
+      box-shadow: 0 8px 20px rgba(255, 142, 0, 0.3);
       color: white !important;
     }
     .coming-soon {
       position: absolute;
       top: -10px;
       right: -10px;
-      background: #FF9A3C;
+      background: #FF8E00;
       color: white;
       padding: 4px 8px;
       border-radius: 4px;
@@ -375,7 +372,7 @@
     /* ===== BETA TESTER ===== */
     .beta-tester {
       background: linear-gradient(135deg, #FFF5E6 0%, #FFF9F0 100%);
-      border: 2px solid #FF9A3C;
+      border: 2px solid #FF8E00;
       border-radius: 16px;
       padding: 40px;
       margin: 60px 0;
@@ -384,7 +381,7 @@
     .beta-tester h3 { color: #1C2B3A; font-size: 1.8rem; }
     .beta-tester p { margin: 20px 0; color: #4A5F7F; }
     .beta-btn {
-      background: #FF9A3C;
+      background: #FF8E00;
       color: white;
       padding: 14px 32px;
       border-radius: 8px;
@@ -395,9 +392,9 @@
       transition: all 0.3s;
     }
     .beta-btn:hover {
-      background: #e88a2c;
+      background: #e67e00;
       transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(255, 154, 60, 0.3);
+      box-shadow: 0 8px 20px rgba(255, 142, 0, 0.3);
     }
 
     /* ===== FOOTER ===== */
@@ -448,12 +445,12 @@
     <div class="container">
       <div class="hero-content">
         <div class="hero-text">
-          <p style="color: #1A9BD7; font-weight: 600; font-size: 1rem; margin-bottom: 16px;">Meteo + Outfit in un'unica app</p>
-          <h1>Vestiti giusto,<br><span class="blue">viaggia leggero.</span></h1>
+          <p style="color: #0078FF; font-weight: 600; font-size: 1rem; margin-bottom: 16px;">Meteo + Outfit in un'unica app</p>
+          <h1>Vestiti giusto,<br><span class="primary-blue">viaggia leggero.</span></h1>
           <p>MeteOutfit ti suggerisce cosa indossare ogni giorno in base al meteo reale e ti aiuta a preparare la valigia perfetta per ogni viaggio.</p>
-          <p style="font-weight: 700; font-size: 1.3rem; margin: 20px 0;"><span class="blue" style="font-size: 1.8rem; display: block; margin-bottom: 8px;">SOLO 2€</span><span style="color: #1A9BD7; font-size: 1rem; font-weight: 500;">oppure gratis per i tester</span></p>
+          <p style="font-weight: 700; font-size: 1.3rem; margin: 20px 0;"><span class="primary-blue" style="font-size: 1.8rem; display: block; margin-bottom: 8px;">SOLO 1€</span><span style="color: #0078FF; font-size: 1rem; font-weight: 500;">oppure gratis per i tester</span></p>
           <div class="hero-buttons">
-            <a href="#download" class="btn btn-primary">Scarica per 2€</a>
+            <a href="#download" class="btn btn-primary">Scarica per 1€</a>
             <a href="#beta" class="btn btn-secondary">Scopri come funziona</a>
           </div>
         </div>
@@ -577,19 +574,19 @@
         <div class="travel-stats">
           <div class="stat">
             <div class="stat-number">10</div>
-            <div class="stat-label">Domande intelligenti</div>
+            <p>Domande intelligenti</p>
           </div>
           <div class="stat">
             <div class="stat-number">6</div>
-            <div class="stat-label">Fasce temperatura</div>
+            <p>Fasce temperatura</p>
           </div>
           <div class="stat">
             <div class="stat-number">10</div>
-            <div class="stat-label">Badge sbloccabili</div>
+            <p>Badge sbloccabili</p>
           </div>
           <div class="stat">
-            <div class="stat-number">2€</div>
-            <div class="stat-label">Prezzo unico</div>
+            <div class="stat-number">1€</div>
+            <p>Prezzo unico</p>
           </div>
         </div>
       </div>
@@ -618,14 +615,12 @@
   </section>
 
   <!-- BETA TESTER -->
-  <section id="beta">
-    <div class="container">
-      <div class="beta-tester">
-        <h3>Diventa un Beta Tester</h3>
-        <p>Vuoi ricevere MeteOutfit completamente gratis? Unisciti al nostro team di tester! Aiutaci a migliorare l'app, segnala bug, suggerisci nuove funzionalità e ricevi accesso illimitato a tutte le feature. I tuoi feedback sono preziosi per rendere MeteOutfit ancora più straordinaria.</p>
-        <p style="font-size: 0.95rem; color: #FF9A3C; font-weight: 600;">Posti limitati disponibili. Selezioneremo i migliori tester per garantire feedback di qualità.</p>
-        <a href="mailto:meteoutfit@gmail.com?subject=Candidatura%20Beta%20Tester%20MeteOutfit" class="beta-btn">Candidati come Tester</a>
-      </div>
+  <section class="container" id="beta">
+    <div class="beta-tester">
+      <h3>Diventa un Beta Tester</h3>
+      <p>Vuoi ricevere MeteOutfit completamente gratis? Unisciti al nostro team di tester! Aiutaci a migliorare l'app, segnala bug, suggerisci nuove funzionalità e ricevi accesso illimitato a tutte le feature. I tuoi feedback sono preziosi per rendere MeteOutfit ancora più straordinaria.</p>
+      <p style="font-size: 0.95rem; color: #666; margin-top: 15px;">Posti limitati disponibili. Selezioneremo i migliori tester per garantire feedback di qualità.</p>
+      <a href="mailto:meteoutfit@gmail.com?subject=Candidatura%20Beta%20Tester%20MeteOutfit" class="beta-btn">Candidati come Tester</a>
     </div>
   </section>
 
@@ -636,22 +631,22 @@
       <p>Scarica MeteOutfit e non chiederti mai più "cosa mi metto oggi?". Meteo, outfit e valigia: tutto in un tap.</p>
       <div class="cta-buttons">
         <a href="https://play.google.com/store/apps/details?id=space.manus.meteoutfit.app.t20260320092841&utm_source=emea_Med" class="btn-download btn-google">
-          <img src="assets/google-play-logo.png" alt="Google Play" style="height: 28px;">
-          <span style="font-weight: 600; color: white;">Google Play</span>
+          <img src="assets/google-play-badge.png" alt="Google Play" />
         </a>
-        <a href="#" class="btn-download btn-apple" style="position: relative;">
-          <img src="assets/app-store-logo.png" alt="App Store" style="height: 28px;">
-          <span style="font-weight: 600; color: white;">App Store</span>
+        <div style="position: relative;">
+          <a href="#" class="btn-download btn-apple" style="opacity: 0.6; cursor: not-allowed;">
+            <img src="assets/app-store-badge.png" alt="App Store" />
+          </a>
           <span class="coming-soon">Coming Soon</span>
-        </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER v2 -->
+  <!-- FOOTER -->
   <footer>
     <div class="container">
-      <p>&copy; 2026 MeteOutfit. Tutti i diritti riservati. | Contatti: <a href="mailto:meteoutfit@gmail.com" style="color: #1A9BD7; text-decoration: none;">meteoutfit@gmail.com</a></p>
+      <p>© 2026 MeteOutfit. Tutti i diritti riservati. | Contatti: <a href="mailto:meteoutfit@gmail.com" style="color: #9BA1A6; text-decoration: none;">meteoutfit@gmail.com</a></p>
     </div>
   </footer>
 </body>
