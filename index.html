@@ -293,9 +293,11 @@
     .cta p { font-size: 1.2rem; margin: 30px 0 40px; }
     .cta-buttons {
       display: flex;
-      gap: 20px;
+      gap: 40px;
       justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
+      margin-top: 50px;
     }
     .btn-download {
       padding: 16px 32px;
@@ -323,7 +325,7 @@
       color: white !important;
     }
     .btn-download img {
-      height: 120px;
+      height: 180px;
       width: auto;
       object-fit: contain;
     }
@@ -334,15 +336,16 @@
       align-items: center;
       justify-content: center;
       padding: 0;
+      border: none;
     }
     .btn-google:hover {
       background: transparent;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
       color: white !important;
     }
     .btn-google img {
-      height: 120px;
+      height: 180px;
       width: auto;
       object-fit: contain;
     }
@@ -353,17 +356,18 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      border: none;
     }
     .btn-apple:hover {
-      background: #e67e00;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(255, 142, 0, 0.3);
+      background: transparent;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
       color: white !important;
     }
     .btn-apple img {
-      height: auto;
-      width: 100%;
-      max-width: 180px;
+      height: 180px;
+      width: auto;
+      object-fit: contain;
     }
     .coming-soon {
       position: absolute;
@@ -639,11 +643,11 @@
       <p>Scarica MeteOutfit e non chiederti mai più "cosa mi metto oggi?". Meteo, outfit e valigia: tutto in un tap.</p>
       <div class="cta-buttons">
         <a href="https://play.google.com/store/apps/details?id=space.manus.meteoutfit.app.t20260320092841&utm_source=emea_Med" class="btn-download btn-google">
-          <img src="assets/google-play-badge.png" alt="Google Play" />
+          <img src="assets/google-play-large.png" alt="Google Play" />
         </a>
         <div style="position: relative;">
           <a href="#" class="btn-download btn-apple" style="opacity: 0.6; cursor: not-allowed;">
-            <img src="assets/app-store-badge.png" alt="App Store" />
+            <img src="assets/app-store-large.png" alt="App Store" />
           </a>
           <span class="coming-soon">Coming Soon</span>
         </div>
